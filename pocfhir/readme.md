@@ -1,12 +1,11 @@
 # POC FHIR
 
-This is a POC to connect FitBit and 23andMe api.
+This is a POC to get data from FitBit API and 23andMe api.
 
 ## FitBit API 
-This API returns heart rate time series data by calling a Fitbit endpoint.
+This API returns heart rate data by calling a Fitbit endpoint.
 The Fitbit endpoint is OAuth2 secured. The access token is currently hard-coded as mule community edition 
-does not provide oauth2 module. The token expires after some interval may result in 'Response code 401
-unauthorized' error
+does not provide oauth2 module.
 
 ## Testing FitBit API
 The cloud url for testing - http://pocfhir.cloudhub.io/api/fitbit
