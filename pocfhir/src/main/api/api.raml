@@ -1,0 +1,33 @@
+#%RAML 0.8
+title: POC FHIR API
+version: v1
+baseUri: http://localhost:8011/poc/api/v1
+documentation:
+  - title: Person Details API
+    content: Person Details API enables user to add the person details to the database. It can also retrive a person details by the ID
+
+securitySchemes:
+    - spring_auth:
+        description: |
+            API set supports authenticating all API requests.
+        type: Basic Authentication
+        
+mediaType: application/json
+/23andme:
+  /snp:
+    displayName: POC 23andme 
+    description: Genetic Details
+    get:
+      description: Get Genetic Details
+      responses:
+       200:
+        body:
+         example: !include examples/23andmeresponse.json
+/fitbit:
+  /heartrate:
+     displayName: POC Fitbit
+     description: Get details on heart rate
+     
+     get:
+      description: Get Heart rate details for a specified date
+      
