@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns:scripting="http://www.mulesoft.org/schema/mule/scripting"
+	xmlns:vm="http://www.mulesoft.org/schema/mule/vm" xmlns:oauth2="http://www.mulesoft.org/schema/mule/oauth2"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:apikit="http://www.mulesoft.org/schema/mule/apikit" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns:spring="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/vm http://www.mulesoft.org/schema/mule/vm/current/mule-vm.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/apikit http://www.mulesoft.org/schema/mule/apikit/current/mule-apikit.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+http://www.mulesoft.org/schema/mule/oauth2 http://www.mulesoft.org/schema/mule/oauth2/current/mule-oauth2.xsd
+http://www.mulesoft.org/schema/mule/scripting http://www.mulesoft.org/schema/mule/scripting/current/mule-scripting.xsd">
+	<http:request-config name="HTTP_Request_Configuration"
+		protocol="HTTPS" host="api.fitbit.com" port="443"
+		connectionIdleTimeout="60000" doc:name="HTTP Request Configuration" />
+	<flow name="flowRenderHtml">
+		<http:listener config-ref="api-httpListenerConfig" path="/api/fitbit"
+			doc:name="HTTP" />
+		<logger
+			message="&quot;HTTP Method=&quot;+#[message.inboundProperties['http.method']]"
+			level="INFO" doc:name="Logger" />
+		<http:static-resource-handler
+			resourceBase="${app.home}" defaultFile="FitBitLogin.html" doc:name="HTTP Static Resource Handler" />
+	</flow>
+	<flow name="mfCall23andMe">
+		<http:listener config-ref="api-httpListenerConfig" path="/api/fitbit/heartrate"
+			doc:name="HTTP" />
+		<logger message="#[payload],#[payload.Date]" level="INFO"
+			doc:name="Logger" />
+		<set-variable variableName="logprefix" value="#[message.id]"
+			doc:name="Variable" />
+		<logger
+			message="#[flowVars.logprefix] - Requesting heart rate for the Date - #[payload.Date] and period - #[payload.Period]"
+			level="INFO" doc:name="Logger" />
+		<http:request config-ref="HTTP_Request_Configuration"
+			path="/1/user/5GF2LW/activities/heart/date/#[payload.Date]/#[payload.Period].json"
+			method="GET" doc:name="HTTP">
+			<http:request-builder>
+                <http:header headerName="Authorization" value="Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1R0YyTFciLCJhdWQiOiIyMjg0TkQiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJyc29jIHJhY3QgcnNldCBybG9jIHJ3ZWkgcmhyIHJwcm8gcm51dCByc2xlIiwiZXhwIjoxNDg2OTI2ODYxLCJpYXQiOjE0ODY4OTgwNjF9.Rv-IhCgP8_0cIYcdR8K9bKQL-qtyWmUwIKkYnetJl_y"/>
+                <http:header headerName="Content-Type" value="application/json"/>
+			</http:request-builder>
+		</http:request>
+        <object-to-string-transformer doc:name="Object to String"/>
+        <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+	</flow>
+</mule>

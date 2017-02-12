@@ -1,33 +1,29 @@
 #%RAML 0.8
 title: POC FHIR API
 version: v1
-baseUri: http://localhost:8011/poc/api/v1
+baseUri: http://localhost:8081/poc/api/v1
 documentation:
-  - title: Person Details API
-    content: Person Details API enables user to add the person details to the database. It can also retrive a person details by the ID
-
-securitySchemes:
-    - spring_auth:
-        description: |
-            API set supports authenticating all API requests.
-        type: Basic Authentication
-        
+  - title: POC FHIR API
+    content: This poc is to get data from 23andme and fitbit by calling their apis.
+    
 mediaType: application/json
 /23andme:
-  /snp:
+  /genotype:
     displayName: POC 23andme 
-    description: Genetic Details
+    description: Genotype data
     get:
-      description: Get Genetic Details
+      description: Gets a list of genetic markers ordered by their start and end positions. Must use one of either gene_name or accession_id. Optionally, start and end parameters may only be used with accession_id
+      queryParameters: 
+        gene_name:
+         displayName: gene_name
+         description: The gene_name parameter will return a list of markers for that gene
+         type: string
+         example: ACTN3
+         required: true 
       responses:
        200:
         body:
+         schema: !include schemas/23andme.json
          example: !include examples/23andmeresponse.json
-/fitbit:
-  /heartrate:
-     displayName: POC Fitbit
-     description: Get details on heart rate
+
      
-     get:
-      description: Get Heart rate details for a specified date
-      

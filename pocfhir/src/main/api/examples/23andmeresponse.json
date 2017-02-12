@@ -1,62 +1,541 @@
-[
-  {
-    "rsid": "rs12564807",
-    "chromosome": "1",
-    "position": "734462",
-    "genotype": "AA"
-  },
-  {
-    "rsid": "rs12564807",
-    "chromosome": "1",
-    "position": "734462",
-    "genotype": "AA"
-  },
-  {
-    "rsid": "rs12564807",
-    "chromosome": "1",
-    "position": "734462",
-    "genotype": "AA"
-  },
-  {
-    "rsid": "rs12564807",
-    "chromosome": "1",
-    "position": "734462",
-    "genotype": "AA"
-  },
-  {
-    "rsid": "rs12564807",
-    "chromosome": "1",
-    "position": "734462",
-    "genotype": "AA"
-  },
-  {
-    "rsid": "rs12564807",
-    "chromosome": "1",
-    "position": "734462",
-    "genotype": "AA"
-  },
-  {
-    "rsid": "rs12564807",
-    "chromosome": "1",
-    "position": "734462",
-    "genotype": "AA"
-  },
-  {
-    "rsid": "rs12564807",
-    "chromosome": "1",
-    "position": "734462",
-    "genotype": "AA"
-  },
-  {
-    "rsid": "rs12564807",
-    "chromosome": "1",
-    "position": "734462",
-    "genotype": "AA"
-  },
-  {
-    "rsid": "rs12564807",
-    "chromosome": "1",
-    "position": "734462",
-    "genotype": "AA"
+{
+  "data": [
+    {
+      "id": "rs597626",
+      "alternate_ids": [],
+      "gene_names": [
+        "ACTN3"
+      ],
+      "accession_id": "NC_000011.9",
+      "start": 66316556,
+      "end": 66316557,
+      "variants": [
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66316556,
+          "end": 66316557,
+          "allele": "C",
+          "platform_labels": [
+            "ILMN_OMNIEXv3_CUSTOMv3"
+          ]
+        },
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66316556,
+          "end": 66316557,
+          "allele": "T",
+          "platform_labels": [
+            "ILMN_OMNIEXv3_CUSTOMv3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rs1791690",
+      "alternate_ids": [],
+      "gene_names": [
+        "ACTN3"
+      ],
+      "accession_id": "NC_000011.9",
+      "start": 66317822,
+      "end": 66317823,
+      "variants": [
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66317822,
+          "end": 66317823,
+          "allele": "A",
+          "platform_labels": [
+            "ILMN_OMNIEXv3_CUSTOMv3"
+          ]
+        },
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66317822,
+          "end": 66317823,
+          "allele": "G",
+          "platform_labels": [
+            "ILMN_OMNIEXv3_CUSTOMv3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i6057677",
+      "alternate_ids": [],
+      "gene_names": [
+        "ACTN3"
+      ],
+      "accession_id": "NC_000011.9",
+      "start": 66318824,
+      "end": 66318825,
+      "variants": [
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66318824,
+          "end": 66318825,
+          "allele": "A",
+          "platform_labels": [
+            "ILMN_CUSTOMv4"
+          ]
+        },
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66318824,
+          "end": 66318825,
+          "allele": "G",
+          "platform_labels": [
+            "ILMN_CUSTOMv4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rs490998",
+      "alternate_ids": [],
+      "gene_names": [
+        "ACTN3"
+      ],
+      "accession_id": "NC_000011.9",
+      "start": 66318971,
+      "end": 66318972,
+      "variants": [
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66318971,
+          "end": 66318972,
+          "allele": "A",
+          "platform_labels": [
+            "ILMN_550",
+            "ILMN_550Qv1_CUSTOMv2",
+            "ILMN_550v3",
+            "ILMN_550v3_CUSTOMv1",
+            "ILMN_OMNIEXv3_CUSTOMv3"
+          ]
+        },
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66318971,
+          "end": 66318972,
+          "allele": "G",
+          "platform_labels": [
+            "ILMN_550",
+            "ILMN_550Qv1_CUSTOMv2",
+            "ILMN_550v3",
+            "ILMN_550v3_CUSTOMv1",
+            "ILMN_OMNIEXv3_CUSTOMv3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rs10791881",
+      "alternate_ids": [],
+      "gene_names": [
+        "ACTN3"
+      ],
+      "accession_id": "NC_000011.9",
+      "start": 66319261,
+      "end": 66319262,
+      "variants": [
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66319261,
+          "end": 66319262,
+          "allele": "A",
+          "platform_labels": [
+            "ILMN_OMNIEXv3_CUSTOMv3"
+          ]
+        },
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66319261,
+          "end": 66319262,
+          "allele": "G",
+          "platform_labels": [
+            "ILMN_OMNIEXv3_CUSTOMv3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rs678397",
+      "alternate_ids": [],
+      "gene_names": [
+        "ACTN3"
+      ],
+      "accession_id": "NC_000011.9",
+      "start": 66324582,
+      "end": 66324583,
+      "variants": [
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66324582,
+          "end": 66324583,
+          "allele": "C",
+          "platform_labels": [
+            "ILMN_OMNIEXv3_CUSTOMv3"
+          ]
+        },
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66324582,
+          "end": 66324583,
+          "allele": "T",
+          "platform_labels": [
+            "ILMN_OMNIEXv3_CUSTOMv3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rs677488",
+      "alternate_ids": [],
+      "gene_names": [
+        "ACTN3"
+      ],
+      "accession_id": "NC_000011.9",
+      "start": 66324761,
+      "end": 66324762,
+      "variants": [
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66324761,
+          "end": 66324762,
+          "allele": "C",
+          "platform_labels": [
+            "ILMN_OMNIEXv3_CUSTOMv3"
+          ]
+        },
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66324761,
+          "end": 66324762,
+          "allele": "T",
+          "platform_labels": [
+            "ILMN_OMNIEXv3_CUSTOMv3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rs2275998",
+      "alternate_ids": [],
+      "gene_names": [
+        "ACTN3"
+      ],
+      "accession_id": "NC_000011.9",
+      "start": 66326580,
+      "end": 66326581,
+      "variants": [
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66326580,
+          "end": 66326581,
+          "allele": "C",
+          "platform_labels": [
+            "ILMN_550",
+            "ILMN_550Qv1_CUSTOMv2",
+            "ILMN_550v3",
+            "ILMN_550v3_CUSTOMv1",
+            "ILMN_CUSTOMv4",
+            "ILMN_OMNIEXv3_CUSTOMv3"
+          ]
+        },
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66326580,
+          "end": 66326581,
+          "allele": "T",
+          "platform_labels": [
+            "ILMN_550",
+            "ILMN_550Qv1_CUSTOMv2",
+            "ILMN_550v3",
+            "ILMN_550v3_CUSTOMv1",
+            "ILMN_CUSTOMv4",
+            "ILMN_OMNIEXv3_CUSTOMv3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rs1671064",
+      "alternate_ids": [],
+      "gene_names": [
+        "ACTN3"
+      ],
+      "accession_id": "NC_000011.9",
+      "start": 66327672,
+      "end": 66327673,
+      "variants": [
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66327672,
+          "end": 66327673,
+          "allele": "A",
+          "platform_labels": [
+            "ILMN_550",
+            "ILMN_550Qv1_CUSTOMv2",
+            "ILMN_550v3",
+            "ILMN_550v3_CUSTOMv1",
+            "ILMN_CUSTOMv4",
+            "ILMN_OMNIEXv3_CUSTOMv3"
+          ]
+        },
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66327672,
+          "end": 66327673,
+          "allele": "G",
+          "platform_labels": [
+            "ILMN_550",
+            "ILMN_550Qv1_CUSTOMv2",
+            "ILMN_550v3",
+            "ILMN_550v3_CUSTOMv1",
+            "ILMN_CUSTOMv4",
+            "ILMN_OMNIEXv3_CUSTOMv3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rs1815739",
+      "alternate_ids": [],
+      "gene_names": [
+        "ACTN3"
+      ],
+      "accession_id": "NC_000011.9",
+      "start": 66328094,
+      "end": 66328095,
+      "variants": [
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66328094,
+          "end": 66328095,
+          "allele": "C",
+          "platform_labels": [
+            "ILMN_550",
+            "ILMN_550Qv1_CUSTOMv2",
+            "ILMN_550v3",
+            "ILMN_550v3_CUSTOMv1",
+            "ILMN_CUSTOMv4"
+          ]
+        },
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66328094,
+          "end": 66328095,
+          "allele": "T",
+          "platform_labels": [
+            "ILMN_550",
+            "ILMN_550Qv1_CUSTOMv2",
+            "ILMN_550v3",
+            "ILMN_550v3_CUSTOMv1",
+            "ILMN_CUSTOMv4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i6057679",
+      "alternate_ids": [],
+      "gene_names": [
+        "ACTN3"
+      ],
+      "accession_id": "NC_000011.9",
+      "start": 66328100,
+      "end": 66328101,
+      "variants": [
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66328100,
+          "end": 66328101,
+          "allele": "C",
+          "platform_labels": [
+            "ILMN_CUSTOMv4"
+          ]
+        },
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66328100,
+          "end": 66328101,
+          "allele": "T",
+          "platform_labels": [
+            "ILMN_CUSTOMv4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i6057680",
+      "alternate_ids": [],
+      "gene_names": [
+        "ACTN3"
+      ],
+      "accession_id": "NC_000011.9",
+      "start": 66328700,
+      "end": 66328701,
+      "variants": [
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66328700,
+          "end": 66328701,
+          "allele": "C",
+          "platform_labels": [
+            "ILMN_CUSTOMv4"
+          ]
+        },
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66328700,
+          "end": 66328701,
+          "allele": "T",
+          "platform_labels": [
+            "ILMN_CUSTOMv4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rs618838",
+      "alternate_ids": [],
+      "gene_names": [
+        "ACTN3"
+      ],
+      "accession_id": "NC_000011.9",
+      "start": 66328718,
+      "end": 66328719,
+      "variants": [
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66328718,
+          "end": 66328719,
+          "allele": "C",
+          "platform_labels": [
+            "ILMN_550",
+            "ILMN_550Qv1_CUSTOMv2",
+            "ILMN_550v3",
+            "ILMN_550v3_CUSTOMv1",
+            "ILMN_OMNIEXv3_CUSTOMv3"
+          ]
+        },
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66328718,
+          "end": 66328719,
+          "allele": "T",
+          "platform_labels": [
+            "ILMN_550",
+            "ILMN_550Qv1_CUSTOMv2",
+            "ILMN_550v3",
+            "ILMN_550v3_CUSTOMv1",
+            "ILMN_OMNIEXv3_CUSTOMv3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rs540874",
+      "alternate_ids": [],
+      "gene_names": [
+        "ACTN3"
+      ],
+      "accession_id": "NC_000011.9",
+      "start": 66329731,
+      "end": 66329732,
+      "variants": [
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66329731,
+          "end": 66329732,
+          "allele": "A",
+          "platform_labels": [
+            "ILMN_550",
+            "ILMN_550Qv1_CUSTOMv2",
+            "ILMN_550v3",
+            "ILMN_550v3_CUSTOMv1",
+            "ILMN_CUSTOMv4",
+            "ILMN_OMNIEXv3_CUSTOMv3"
+          ]
+        },
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66329731,
+          "end": 66329732,
+          "allele": "G",
+          "platform_labels": [
+            "ILMN_550",
+            "ILMN_550Qv1_CUSTOMv2",
+            "ILMN_550v3",
+            "ILMN_550v3_CUSTOMv1",
+            "ILMN_CUSTOMv4",
+            "ILMN_OMNIEXv3_CUSTOMv3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i6057681",
+      "alternate_ids": [],
+      "gene_names": [
+        "ACTN3"
+      ],
+      "accession_id": "NC_000011.9",
+      "start": 66330523,
+      "end": 66330524,
+      "variants": [
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66330523,
+          "end": 66330524,
+          "allele": "G",
+          "platform_labels": [
+            "ILMN_CUSTOMv4"
+          ]
+        },
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66330523,
+          "end": 66330524,
+          "allele": "T",
+          "platform_labels": [
+            "ILMN_CUSTOMv4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rs11227532",
+      "alternate_ids": [],
+      "gene_names": [
+        "ACTN3"
+      ],
+      "accession_id": "NC_000011.9",
+      "start": 66330767,
+      "end": 66330768,
+      "variants": [
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66330767,
+          "end": 66330768,
+          "allele": "G",
+          "platform_labels": [
+            "ILMN_OMNIEXv3_CUSTOMv3"
+          ]
+        },
+        {
+          "accession_id": "NC_000011.9",
+          "start": 66330767,
+          "end": 66330768,
+          "allele": "T",
+          "platform_labels": [
+            "ILMN_OMNIEXv3_CUSTOMv3"
+          ]
+        }
+      ]
+    }
+  ],
+  "links": {
+    "next": null
   }
-]
+}
