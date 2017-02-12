@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "activities-heart": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "dateTime": {
+            "type": "string"
+          },
+          "value": {
+            "type": "object",
+            "properties": {
+              "customHeartRateZones": {
+                "type": "array",
+                "items": {}
+              },
+              "heartRateZones": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "max": {
+                      "type": "integer"
+                    },
+                    "min": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "max",
+                    "min",
+                    "name"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "customHeartRateZones",
+              "heartRateZones"
+            ]
+          }
+        },
+        "required": [
+          "dateTime",
+          "value"
+        ]
+      }
+    }
+  },
+  "required": [
+    "activities-heart"
+  ]
+}

@@ -37,7 +37,7 @@ http://www.mulesoft.org/schema/mule/scripting http://www.mulesoft.org/schema/mul
 			path="/1/user/5GF2LW/activities/heart/date/#[payload.Date]/#[payload.Period].json"
 			method="GET" doc:name="HTTP">
 			<http:request-builder>
-                <http:header headerName="Authorization" value="Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1R0YyTFciLCJhdWQiOiIyMjg0TkQiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJyc29jIHJhY3QgcnNldCBybG9jIHJ3ZWkgcmhyIHJwcm8gcm51dCByc2xlIiwiZXhwIjoxNDg2OTI2ODYxLCJpYXQiOjE0ODY4OTgwNjF9.Rv-IhCgP8_0cIYcdR8K9bKQL-qtyWmUwIKkYnetJl_y"/>
+                <http:header headerName="Authorization" value="Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1R0YyTFciLCJhdWQiOiIyMjg0TkQiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJyc29jIHJhY3QgcnNldCBybG9jIHJ3ZWkgcmhyIHJwcm8gcm51dCByc2xlIiwiZXhwIjoxNDg2OTI2ODYxLCJpYXQiOjE0ODY4OTgwNjF9.Rv-IhCgP8_0cIYcdR8K9bKQL-qtyWmUwIKkYnetJl_Y"/>
                 <http:header headerName="Content-Type" value="application/json"/>
 			</http:request-builder>
 		</http:request>

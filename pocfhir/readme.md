@@ -9,13 +9,13 @@ does not provide oauth2 module. The token expires after some interval may result
 unauthorized' error
 
 ## Testing FitBit API
-The cloud url for testing - 
+The cloud url for testing - http://pocfhir.cloudhub.io/api/fitbit
 
 ## 23andMe API
 This API returns genotype data by calling a 23andMe endpoint
 
 ## Testing 23andMe API
-The cloud url for testing - 
+The cloud url for testing - http://pocfhir.cloudhub.io/console/
 
 ## Deployment
 

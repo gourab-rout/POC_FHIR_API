@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "alternate_ids": {
+            "type": "array",
+            "items": {}
+          },
+          "gene_names": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "accession_id": {
+            "type": "string"
+          },
+          "start": {
+            "type": "integer"
+          },
+          "end": {
+            "type": "integer"
+          },
+          "variants": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "accession_id": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "allele": {
+                  "type": "string"
+                },
+                "platform_labels": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": [
+                "accession_id",
+                "start",
+                "end",
+                "allele",
+                "platform_labels"
+              ]
+            }
+          }
+        },
+        "required": [
+          "id",
+          "alternate_ids",
+          "gene_names",
+          "accession_id",
+          "start",
+          "end",
+          "variants"
+        ]
+      }
+    },
+    "links": {
+      "type": "object",
+      "properties": {
+        "next": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "next"
+      ]
+    }
+  },
+  "required": [
+    "data",
+    "links"
+  ]
+}
